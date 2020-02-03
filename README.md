@@ -20,3 +20,6 @@ Connect to :
 1. Pick elements;
 1. Send elements to destination;
 1. Tidy up graphics.
+
+## Reference
+[Basic scene](http://jsfiddle.net/4Txgp/13/)

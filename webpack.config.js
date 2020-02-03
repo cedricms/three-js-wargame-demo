@@ -12,6 +12,9 @@ module.exports = {
         new CopyPlugin([
             { from: './*.html', to: '.' },
         ]),
+        new CopyPlugin([
+            { from: './*.css', to: '.' },
+        ]),
         new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,
