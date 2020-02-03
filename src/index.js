@@ -6,7 +6,6 @@ import { WEBGL } from 'three/examples/jsm/WebGL.js';
 
 var scene;
 var camera;
-var canvas;
 var renderer;
 var cube;
 
@@ -23,7 +22,7 @@ function setupScene() {
 
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-    canvas = document.createElement( 'canvas' );
+    var canvas = document.createElement( 'canvas' );
     var context = canvas.getContext( 'webgl2', { alpha: false } );
     renderer = new THREE.WebGLRenderer( { canvas: canvas, context: context } );
     renderer.setPixelRatio( window.devicePixelRatio );
@@ -46,9 +45,7 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
-    webglRenderer.setSize(window.innerWidth, window.innerHeight);
-
-    canvas.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
 function animate() {
