@@ -1,0 +1,29 @@
+{
+  "name": "three-js-wargame-demo",
+  "version": "1.0.0",
+  "description": "A quick demo to show how to implement a wargame with three.js.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedricms/three-js-wargame-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedricms/three-js-wargame-demo/issues"
+  },
+  "homepage": "https://github.com/cedricms/three-js-wargame-demo#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
